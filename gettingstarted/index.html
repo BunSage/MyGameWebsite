@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bee | Art Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- REQUIRED FOR GLB -->
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body>
+
+  <!-- Bees -->
+  <div class="bee bee1">🐝</div>
+  <div class="bee bee2">🐝</div>
+  <div class="bee bee3">🐝</div>
+  <div class="bee bee4">🐝</div>
+  <div class="bee bee5">🐝</div>
+  <div class="bee bee6">🐝</div>
+
+  <header>
+    <h1>Bee's Portfolio</h1>
+    <p>Bee Creative 🐝</p>
+  </header>
+
+  <section class="gallery">
+
+    <!-- 3D MODEL -->
+    <div class="art-piece vertical-layout">
+
+      <div class="model-wrap">
+        <model-viewer
+          src="images/Steak.glb"
+          alt="3D Model"
+          camera-controls
+          auto-rotate
+          shadow-intensity="1"
+          exposure="1"
+          environment-image="neutral">
+        </model-viewer>
+      </div>
+
+      <div class="description centered">
+        <h2>3D Model</h2>
+        <p>Click and drag to rotate</p>
+      </div>
+
+    </div>
+
+    <!-- ART 1 (SIDE BY SIDE) -->
+    <div class="art-piece">
+
+      <div class="dual-images">
+        <img src="images/art1.gif">
+        <img src="images/art11.gif">
+      </div>
+
+      <div class="description">
+        <h2>Artwork Title</h2>
+        <p>This piece shows two variations of the same concept.</p>
+      </div>
+
+    </div>
+
+    <!-- ART 2 (4 GRID) -->
+    <div class="art-piece">
+
+      <div class="image-grid">
+        <img src="images/art2.jpg">
+        <img src="images/art22.jpg">
+        <img src="images/art222.jpg">
+        <img src="images/art2222.jpg">
+      </div>
+
+      <div class="description">
+        <h2>Simpsons recreation</h2>
+        <p>Molded and Textured by</p>
+      </div>
+
+    </div>
+
+    <!-- ART 3 -->
+    <div class="art-piece">
+      <img src="images/book.jpg">
+      <div class="description">
+        <h2>Tavern Bookshelf</h2>
+      </div>
+    </div>
+
+  </section>
+
+  <footer>
+    <span>Email: breannaellamichel@gmail.com</span>
+    <span>Instagram: @bee</span>
+    <span>Twitter: @bee</span>
+    <a href="contact.html" class="contact-btn">Contact</a>
+  </footer>
+
+</body>
+</html>
